@@ -478,7 +478,7 @@ class Tabs extends React.Component {
     });
 
     return (
-      <div style={TabStyles.wrapper}>
+      <div style={TabStyles.wrapper} className='rdTabWrapper'>
         <div style={TabStyles.relative}>
           <ul tabIndex='-1' style={tabInlineStyles.tabBar} className={tabClassNames.tabBar}>
             {tabs}

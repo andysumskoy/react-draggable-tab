@@ -25,7 +25,7 @@ class TabTemplate extends React.Component {
       style = styles.root;
     }
     return (
-      <div style={style}>
+      <div style={style} className="rdTabTemplate">
         {this.props.children}
       </div>
     );
