@@ -2,6 +2,7 @@
 
 import React from 'react';
 import StyleOverride from '../helpers/styleOverride';
+import cx from 'classnames';
 
 const styles = {
   root: {
@@ -25,7 +26,7 @@ class TabTemplate extends React.Component {
       style = styles.root;
     }
     return (
-      <div style={style} className="rdTabTemplate">
+      <div style={style} className={cx('rdTabTemplate', {rdTabTemplateSelected: this.props.selected})}>
         {this.props.children}
       </div>
     );
